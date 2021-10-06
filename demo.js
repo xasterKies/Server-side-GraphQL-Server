@@ -13,7 +13,7 @@ const typeDefs = gql`
     }
 `
 
-const resolver = {
+const resolvers = {
     Query: {
         me() {
             return {
@@ -25,7 +25,7 @@ const resolver = {
     }
 }
 
-const server = new ApolloServers({
+const server = new ApolloServer({
     typeDefs,
     resolvers
 })
